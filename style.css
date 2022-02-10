@@ -31,9 +31,10 @@ button {
 }
 
 .subtext,
-a {
+a,
+.subtext-info {
     font-size: 18px;
-    color:  #E5E7EB;
+    color:  #bfc1c5;
 }
 
 .subtext {
@@ -74,8 +75,10 @@ ul {
 
 .hero-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 64px 0px;
+    flex-wrap: wrap;
 }
 
 .hero-text {
@@ -91,6 +94,18 @@ ul {
     width: 500px;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0px 100px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
 .heading-info {
     font-size: 36px;
     font-weight: 700;
@@ -99,6 +114,28 @@ ul {
 }
 
 .info-card {
+    display: flex;
+    flex-direction: column;
+    /* flex: 0 1 auto; */
     width: 160px;
+}
+
+.img-container {
+    display: flex;
+    overflow: hidden;
+    border: 4px transparent #6D747D;
+    border-radius: 8px;
+    width: 100%;
     height: 160px;
 }
+
+.subtext-info {
+    text-align: center;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+
