@@ -43,6 +43,8 @@ a,
 }
 
 .image {
+    display: flex;
+    overflow: clip;
     width: 523px;
     height: 237px;
     background-color: #6D747D;
@@ -139,3 +141,8 @@ ul {
     height: auto;
 }
 
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
